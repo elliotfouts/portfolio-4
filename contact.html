@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/uikit.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Welcome | Elliot Fouts</title>
+</head>
+<body>
+    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-margin uk-padding-small">
+        <div class="uk-navbar-left">
+            <h1 class="uk-text-middle">Elliot Fouts</h1>
+        </div>
+        <div class="uk-navbar-right" id="navbar-menu-text">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+                <li class="uk-active"><a href="#">Contact</a></li>
+            </ul>
+        </div>        
+        <div class="uk-navbar-right" id="navbar-menu-icon">
+            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-reveal" uk-navbar-toggle-icon href="#"></a>
+        </div>
+    </nav>
+
+
+    <form class="uk-padding">
+        <fieldset class="uk-fieldset">
+    
+            <legend class="uk-legend">Get in Touch!</legend>
+    
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Full Name">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Email">
+            </div>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Organization (optional)">
+            </div>
+    
+            <div class="uk-margin">
+                <textarea class="uk-textarea" rows="10" placeholder="Enter Message..."></textarea>
+            </div>
+    
+            <div class="uk-margin">
+                <button class="demo uk-button uk-button-default" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Your message has been sent!'})">Send</button>
+            </div>
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true; flip: true;">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
+                <li class="uk-parent"><a href="index.html">Home</a></li>
+                <li class="uk-parent"><a href="work.html">Work</a></li>
+                <li class="uk-parent"><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+                <li class="uk-active"><a href="#">Contact</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: github"></span> Github</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: linkedin"></span> LinkedIn</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: instagram"></span> Instagram</a></li>
+            </ul>
+    
+        </div>
+    </div>
+    <script src="assets/js/uikit.js"></script>
+    <script src="assets/js/uikit-icons.js"></script>
+</body>
+</html>

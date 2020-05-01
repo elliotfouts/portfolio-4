@@ -1,0 +1,22 @@
+#navbar-menu-icon {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.uk-textarea {
+    resize: none;
+}
+
+
+@media (max-width: 700px) {
+    #navbar-menu-icon {
+        display: block;
+    }
+
+    #navbar-menu-text {
+        display: none;
+    }
+}
